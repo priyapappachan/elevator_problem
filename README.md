@@ -53,6 +53,12 @@ Initialize all elevators as below
 
 ## Algorithm 
 
+When a request comes, check for the nearest elevator and assign the request to the elevator. 
+The nearest elevator is chosen by checking elevators 
+-  without full capacity
+-  finding the difference of floors with current passenger floor
+-  if an elevator is idle or the elevator going in the same direction as the passenger. 
+-  reassign an already assigned elevator if elevator is fully loaded.
 
 ```
 for each request in requests array {
