@@ -45,7 +45,7 @@ Initialize all elevators as below
 	elevatorNumber = 1, 2, etc.  (unique identifier)
 	state = idle
 	fullCapacity = false
-	floorNumber = 0, 1, etc. (divide number of floors by number of elevators and assign number from 0 to division result)
+	floorNumber = 0, 1, etc.
 	stops [ ]  - empty array
 }
 
