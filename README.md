@@ -1,7 +1,7 @@
 # Elevator problem
 
 ## Problem Statement
-Problem Statement : 
+
 Consider we are building an algorithm for an elevator system for a highrise building like Burj Khalifa. Typically these buildings would have a considerable number of floors / stops. E.g. Burj Khalifa has 165 but let us assume that the number can go upto 200. 
 Given the number of lifts are N, M people who are requesting lifts rapidly. Design an algorithm which would solve these problems 
 - Minimise the wait time for each lift. 
@@ -75,7 +75,7 @@ assignElevator(Elevators, Request) {
 
 ```
 
-method to find the nearest elevator based on elevator's current floor position, direction, and capacity
+Method to find the nearest elevator based on elevator's current floor position, direction, and capacity
 
 ```
 findNearestElevator(Elevator, Request) {
@@ -103,7 +103,7 @@ findNearestElevator(Elevator, Request) {
 
 All elevators are running in parallel. 
 
-method called when elevator stops at a floor. We need to reassign a passenger request if elevator becomes full.
+Method called when elevator stops at a floor. We need to reassign a passenger request if elevator becomes full.
 
 ```
 updateElevatorState(Elevator) {
@@ -123,8 +123,10 @@ updateElevatorState(Elevator) {
 }
 ```
 
+Method called when a passenger presses a button after entering the lift 
+
 ```
-method called when a passenger presses a button after entering the lift 
+
 
 addFloorToElevator(Elevator, floorNumber) {
 	Elevator.stops.add(floorNumber)
@@ -134,7 +136,7 @@ addFloorToElevator(Elevator, floorNumber) {
 
 ```
 
-for peek time. morning 8 - 9, evening 4 - 5  
+For peek time. morning 8 - 9, evening 4 - 5 run below code
 
 ```
 for each elevators {	
