@@ -21,6 +21,7 @@ Request : {
 	floorNumber
 	direction -  (up or down)
 	time 
+	assigned : elevatorNumber
 }
 ```
 There is list of elevators. An Elevator object has following schema.
@@ -32,7 +33,6 @@ Elevator {
 	fullCapacity : true / false
 	floorNumber
 	stops : [ ]     (floor numbers in sorted order)
-	assigned : elevatorNumber
 }
 
 ```
@@ -139,6 +139,7 @@ addFloorToElevator(Elevator, floorNumber) {
 	check elevator capacity is full
 		if full
 			elevator.fullCapacity = true
+	remove request from request array by searching requests array with the assigned elevator number
 }
 
 ```
