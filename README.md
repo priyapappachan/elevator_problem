@@ -137,7 +137,8 @@ Method called when a passenger presses a button after entering the lift
 addFloorToElevator(Elevator, floorNumber) {
 	Elevator.stops.add(floorNumber)
 	check elevator capacity is full
-		if full elevator.fullCapacity = true
+		if full
+			elevator.fullCapacity = true
 }
 
 ```
