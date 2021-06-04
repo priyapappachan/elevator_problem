@@ -19,8 +19,7 @@ Requests Array contains list of request objects.
 Request : {
 	id
 	int floorNumber
-	string direction;    (up or down)
-	time 
+	string direction -  (up or down)
 }
 ```
 There is list of elevators. An Elevator object has following schema.
